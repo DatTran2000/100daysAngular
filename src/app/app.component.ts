@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, VERSION } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,20 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Cong Dat';
+  version = 'Angular ' + VERSION.major;
+  inputType = "text"
+  value = "default"
+
+  // DATA BINDING
+
+  // EVENT BINDING
+
+  user = {
+    name: "dat",
+    age: 29
+  };
+
+  handler() {
+    console.log("click !");
+  }
 }
