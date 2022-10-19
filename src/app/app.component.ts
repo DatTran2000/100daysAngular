@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Cong Dat';
+  current = 10;
+  valueIncrease = Math.random() * 5;
 }
