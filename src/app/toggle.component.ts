@@ -2,13 +2,18 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-toggle',
-  template: `<div
+  template: `
+  <ng-content select="h1"></ng-content>
+  <div
     class="toggle-wrapper"
     [class.checked]="checked"
     (click)="checkedChange.emit(!this.checked)"
   >
     <div class="toggle"></div>
-  </div>`,
+  </div>
+  <ng-content select="h2"></ng-content>
+  <ng-content select="h3"></ng-content>
+  `,
   styles: [
     `
       .toggle-wrapper {
