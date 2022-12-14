@@ -18,5 +18,9 @@
 
 <hr>
 
-<app-tabscomponent [navs]="navs"></app-tabscomponent>
+<app-tabscomponent [navs]="navs" [linkTemplate]="linkTemplate"></app-tabscomponent>
+
+<ng-template #linkTemplate>
+  Sone link
+</ng-template>
 

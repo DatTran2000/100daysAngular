@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input,Output ,OnInit, TemplateRef } from '@angular/core';
 
 @Component({
   selector: 'app-tabscomponent',
@@ -6,10 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./tabscomponent.component.css']
 })
 export class TabscomponentComponent {
-
-  
-  @Input()
-  navs!: string[];
-
+  @Input() navs! : string[];
+  @Input() linkTemplate!: TemplateRef<any>;
 
 }
